@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+
+class {{class}}TableSeeder extends Seeder {
+
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //TODO: seed data for {{class}}
+        //For example:
+        //  {{class}}::create([ 'key' => 'value' ])
+    }
+
+}
