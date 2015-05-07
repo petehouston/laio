@@ -21,11 +21,29 @@ class ConsoleCommandServiceProvider extends ServiceProvider {
      */
     public function register()
     {
+        $this->registerSpawn();
+    }
+
+    /**
+     * Register spawn commands
+     *
+     * @return void
+     */
+    protected function registerSpawn()
+    {
+        // spawn:seeder
         $this->app->singleton('com.petehouston.seed', function ($app) {
             return $app['\App\Console\Commands\SpawnSeederCommand'];
         });
 
         $this->commands('com.petehouston.seed');
+
+        // spawn:observer
+        $this->app->singleton('com.petehouston.observer', function ($app) {
+            return $app['\App\Console\Commands\SpawnObserverCommand'];
+        });
+
+        $this->commands('com.petehouston.observer');
     }
 
 }

@@ -146,7 +146,8 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-		'App\Providers\ConsoleCommandServiceProvider',
+        'App\Providers\ConsoleCommandServiceProvider',
+		'App\Providers\ObserverServiceProvider',
 
 	],
 
