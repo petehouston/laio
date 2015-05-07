@@ -10,6 +10,10 @@
 	"keywords": ["bootstrap", "laravel", "template", "aio"],
 	"license": "MIT",
 	"type": "project",
+	"repositories": [{
+		"type": "vcs",
+		"url": "https://github.com/petehouston/laio"
+	}],
 	"require": {
 		"laravel/framework": "5.0.*",
 		"illuminate/html": "~5.0",
