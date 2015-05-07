@@ -44,6 +44,13 @@ class ConsoleCommandServiceProvider extends ServiceProvider {
         });
 
         $this->commands('com.petehouston.observer');
+
+        // spawn::view.composer
+        $this->app->singleton('com.petehouston.viewcomposer', function ($app) {
+            return $app['\App\Console\Commands\SpawnViewComposerCommand'];
+        });
+
+        $this->commands('com.petehouston.viewcomposer');
     }
 
 }

@@ -1,0 +1,18 @@
+<?php namespace App\Views\Composers;
+
+use Illuminate\Contracts\View\View as ViewContract;
+
+class {{class}}Composer {
+
+    /**
+     * Composer the view for Google Analytics script template
+     *
+     * @param  ViewContract $view
+     */
+    public function compose(ViewContract $view)
+    {
+        // bind variable to view
+        // for example:
+        // $view->with('data', $data);
+    }
+}

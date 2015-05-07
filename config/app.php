@@ -148,7 +148,8 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'App\Providers\ConsoleCommandServiceProvider',
 		'App\Providers\ObserverServiceProvider',
-		'App\Providers\HelperServiceProvider',
+        'App\Providers\HelperServiceProvider',
+		'App\Providers\ViewComposerServiceProvider',
 
 	],
 
